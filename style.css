@@ -20,9 +20,13 @@ button {
     border-radius: 0.5em;
 }
 
+button:active {
+    background-color: hsl(212, 21%, 14%);
+}
+
 img {
     max-height: 100%;
-    max-width: 100%;
+    width: auto;
 }
 
 .container {
@@ -33,7 +37,6 @@ img {
     position: absolute;
     left: 30vw;
     top: 20vh;
-
     border-radius: 1em;
     overflow: hidden;
 }
@@ -80,4 +83,20 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 1440px) {
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    .container {
+        height: 90vh;
+        width: 90vw;
+        flex-direction: column;
+        position: absolute;
+        left: 5vw;
+        top: 5vh;
+    }
 }

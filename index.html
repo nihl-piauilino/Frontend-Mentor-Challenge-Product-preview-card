@@ -18,7 +18,11 @@
 <body>
 
   <div class="container">
-    <img src="images/image-product-desktop.jpg" alt="Preview">
+    <picture>
+      <source media="(min-width: 1440px)" srcset="images/image-product-desktop.jpg">
+      <img src="images/image-product-mobile.jpg" alt="Preview">
+    </picture>
+    <!-- <img src="images/image-product-desktop.jpg" alt="Preview"> -->
     <div class="copywright">
 
       <span class="secondary-text">PERFUME</span>
@@ -37,7 +41,7 @@
 
       </div>
 
-    <button>Add to Cart</button>
+    <button><img src="images/icon-cart.svg" alt=""> Add to Cart</button>
     
     </div>
   </div>
